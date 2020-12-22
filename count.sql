@@ -1,0 +1,11 @@
+select count (*) as author_count from author;
+select count (*) as category_count from category;
+select count (*) as cuisine_count from cuisine;
+select count (*) as recipe_count from recipe;
+select count (*) as ingredient_count from ingredient;
+select count (*) as quantity_count from instruction;
+select count (*) as instruction_count from instruction;
+select count (*) as note_count from note;
+select count (*) as users_count from users;
+select count (*) as review_count from review;
+select count (*) as rate_count from rate;

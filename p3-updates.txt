@@ -1,0 +1,1 @@
+I changed my ERD for rate and review because it's a relation attribute not a separate entities and some names like users instead of user, instruction instead of method.

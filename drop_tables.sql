@@ -1,0 +1,12 @@
+drop view if exists recipe_data CASCADE;
+drop table if exists rate cascade;
+drop table if exists review cascade;
+drop table if exists users cascade;
+drop table if exists note cascade;
+drop table if exists instruction cascade;
+drop table if exists quantity cascade;
+drop table if exists ingredient cascade;
+drop table if exists recipe cascade;
+drop table if exists cuisine cascade;
+drop table if exists category cascade;
+drop table if exists author cascade;

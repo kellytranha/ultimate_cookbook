@@ -1,0 +1,60 @@
+1. 
+recipe(id int pkey, 
+title text, 
+description text, 
+prep_time int not null, 
+cook_time int not null, 
+category_id int fkey(category), 
+cuisine_id in fkey(cuisine), 
+author_id int fkey(author), 
+views int not null, 
+photo bytea not null)
+
+2. 
+author(id int pkey, 
+name string not null, 
+country string not null)
+
+3. 
+category(id int pkey, 
+name string not null)
+
+4. 
+cuisine(id int pkey, 
+name string not null)
+
+5. 
+quantity(recipe_id int pkey fkey(recipe),
+ingredient_id int pkey fkey(ingredient), 
+quantity int not null,
+measurement string not null)
+
+6. 
+ingredient(id int pkey, 
+recipe_id int fkey(recipe), 
+name string not null)
+
+7. 
+cooking_method(recipe_id int pkey fkey(recipe), 
+description text not null)
+
+8. 
+note(recipe_id int pkey fkey(recipe), 
+description text not null)
+
+9. 
+users(id int pkey, 
+name string not null, 
+country string not nul)
+
+10. 
+review(user_id int pkey fkey(user), 
+recipe_id int pkey fkey(recipe), 
+num_of_stars int {1, 2, 3, 4, 5} , 
+review_text text not null)
+
+11. 
+rate(user_id int pkey fkey(user), 
+author_id int pkey fkey(author), 
+num_of_like int {0, 1}, 
+review_text text not null)

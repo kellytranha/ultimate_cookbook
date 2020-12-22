@@ -1,0 +1,18 @@
+I will create a web portal that displays a collection of recipes of different categories/cuisine. This portal will include the followings:
+
+- Recipes of different food categories/cuisines.
+- "Recommended Recipe" highlights the recipe with the highest 5 star rating.
+- "Recipe of the day" highlights the recipe most viewed in the last 24 hours.
+
+The database will include the following entities/relationships:
+1. Recipe (id, title, description, prep_time, cook_time, category_id, cuisine_id, author_id, views, photo)
+2. Author (id, name, country)
+3. Category (id, name)
+4. Cuisine (id, name)
+5. Ingredient (id, recipe_id, name)
+6. Quantity(recipe_id, ingredient_id, quantity, measurement)
+7. Cooking Method (recipe_id, description)
+8. Note (recipe_id, description)
+9. Users (id, name, country)
+10. Review (user_id, recipe_id, num_of_stars, review_text)
+11. Rate (user_id, author_id, num_of_like, review_text)
